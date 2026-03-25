@@ -1,0 +1,136 @@
+// data/politicians.js
+const politicians = [
+  {
+    id: 1,
+    name: "Alex Martinez",
+    party: "Democratic",
+    state: "CA",
+    office: "U.S. House",
+    district: "CA-12",
+    level: "federal",
+    environment: {
+      stance: "support",
+      summary:
+        "Supports aggressive emissions reductions, federal clean energy investments, and international climate agreements."
+    },
+    fiscal: {
+      stance: "mixed",
+      summary:
+        "Backs progressive taxation and targeted spending with oversight of large federal programs."
+    },
+    migration: {
+      stance: "support",
+      summary:
+        "Supports a path to citizenship for long-term undocumented residents and protections for DACA recipients."
+    },
+    civilRights: {
+      stance: "support",
+      summary:
+        "Backs protections against discrimination and supports federal voting rights legislation."
+    },
+    healthcare: {
+      stance: "support",
+      summary:
+        "Supports expanding public coverage options and lowering prescription drug costs."
+    },
+    other: {
+      stance: "neutral",
+      summary:
+        "Emphasizes bipartisan cooperation on infrastructure and technology innovation."
+    },
+    lastUpdated: "Mar 2026",
+    sources: [
+      { label: "Campaign site", url: "#" },
+      { label: "Official House bio", url: "#" }
+    ]
+  },
+  {
+    id: 2,
+    name: "Jordan Ellis",
+    party: "Republican",
+    state: "TX",
+    office: "Governor",
+    district: null,
+    level: "state",
+    environment: {
+      stance: "mixed",
+      summary:
+        "Supports state-level incentives for energy innovation while opposing federal regulations viewed as burdensome."
+    },
+    fiscal: {
+      stance: "support",
+      summary:
+        "Advocates for reduced state spending growth, tax cuts, and balanced-budget requirements."
+    },
+    migration: {
+      stance: "oppose",
+      summary:
+        "Opposes federal proposals seen as amnesty and supports expanded state enforcement at the border."
+    },
+    civilRights: {
+      stance: "mixed",
+      summary:
+        "Supports some criminal justice reforms while backing restrictions on certain protest tactics."
+    },
+    healthcare: {
+      stance: "mixed",
+      summary:
+        "Supports private-market approaches and opposes broad state-funded expansions."
+    },
+    other: {
+      stance: "support",
+      summary:
+        "Emphasizes business regulation reform and rural economic development."
+    },
+    lastUpdated: "Feb 2026",
+    sources: [
+      { label: "Governor’s office", url: "#" },
+      { label: "State voting guide", url: "#" }
+    ]
+  },
+  {
+    id: 3,
+    name: "Taylor Singh",
+    party: "Independent",
+    state: "WI",
+    office: "State Senate",
+    district: "WI-7",
+    level: "state",
+    environment: {
+      stance: "support",
+      summary:
+        "Supports conservation programs for lakes and forests and local clean energy incentives."
+    },
+    fiscal: {
+      stance: "mixed",
+      summary:
+        "Backs targeted infrastructure investment while calling for audits of existing programs."
+    },
+    migration: {
+      stance: "mixed",
+      summary:
+        "Supports legal immigration streamlining and local integration support, but opposes broad federal mandates on states."
+    },
+    civilRights: {
+      stance: "support",
+      summary:
+        "Supports anti-discrimination protections and reforms to expand access to voting."
+    },
+    healthcare: {
+      stance: "support",
+      summary:
+        "Backs expanded rural healthcare access and mental health services funding."
+    },
+    other: {
+      stance: "support",
+      summary:
+        "Emphasizes ethics reforms and transparency in state government."
+    },
+    lastUpdated: "Jan 2026",
+    sources: [
+      { label: "State candidate guide", url: "#" }
+    ]
+  }
+];
+
+module.exports = politicians;
