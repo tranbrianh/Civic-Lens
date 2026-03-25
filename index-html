@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Civic Lens – US Politician Policy Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>Civic Lens</h1>
+        <p class="subtitle">
+          Search American politicians and scan positions by issue.
+        </p>
+      </header>
+
+      <main class="main">
+        <section class="search-panel">
+          <div class="field">
+            <label for="searchInput">Search</label>
+            <input
+              id="searchInput"
+              type="text"
+              placeholder="Name, office, or state (e.g. 'Alex', 'Governor', 'WI')"
+            />
+          </div>
+
+          <div class="field">
+            <label>Issues</label>
+            <div class="issue-filters">
+              <label
+                ><input type="checkbox" value="environment" />
+                Environment</label
+              >
+              <label><input type="checkbox" value="fiscal" /> Fiscal</label>
+              <label
+                ><input type="checkbox" value="migration" /> Migration</label
+              >
+              <label
+                ><input type="checkbox" value="civilRights" /> Civil
+                rights</label
+              >
+              <label
+                ><input type="checkbox" value="healthcare" /> Healthcare</label
+              >
+              <label><input type="checkbox" value="other" /> Other</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Sort</label>
+            <select id="sortSelect">
+              <option value="relevance">Relevance</option>
+              <option value="name">Name A–Z</option>
+            </select>
+          </div>
+
+          <div class="status">
+            <span id="resultCount">0 matches</span>
+            <span id="loadingIndicator" class="hidden">Loading…</span>
+          </div>
+        </section>
+
+        <section class="results-panel">
+          <div id="resultsList" class="results-list"></div>
+          <div id="emptyState" class="empty hidden">
+            No candidates match this search. Try a different spelling or remove
+            filters.
+          </div>
+          <article id="detailCard" class="detail hidden"></article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>
+          Nonpartisan prototype. Always cross-check with official and
+          nonpartisan voter guides.
+        </p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
